@@ -485,7 +485,7 @@ print(f"Média da Silhueta: {silhouette_avg:.2f}")
 # %%
 cluster_summary = df_model.groupby('cluster').mean().round(2)
 print("\n=== Média das variáveis por cluster ===")
-st.dataframe(cluster_summary)
+display(cluster_summary)
 
 # %%
 # ===============================================================
